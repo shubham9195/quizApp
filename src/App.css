@@ -1,38 +1,71 @@
-.App {
+body{
+  background-color: #7d007d;
+}
+.quesBody{
+  background-color: #fff;
+  padding:5px;
+  margin: 25px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.options{
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  font-size: 2em;
+  margin: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
+  margin: 10px;
+  font-size: 20px;
+}
+.question{
+  margin-top: 20px;
+  background-color: #fff;
+  padding:10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#answers ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#answers li {
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  min-height: 60px;
+  width: 48%;
+  display: flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#answers li span {
+  color: #0b0e21;
+  font-size: 20px;
+  flex: 75px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: background-color .3s ease;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#answers li p {
+  color: #0b0e21;
+  font-size: 20px;
+  font-weight: 600;
+  flex: calc(100% - 75px);
+  margin: auto 20px;
+  transition: color .3s ease;
+  text-align: left;
 }
